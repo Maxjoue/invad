@@ -1,0 +1,2931 @@
+// CHEN PAUL  JOUENNE MAXIME 14/01/2020
+// CE PROGRAMME EST LE JEU SPACE INVADERS (fait maison)
+
+/****************************************************************************************************************************
+
+* * * * * * * * * * * * * * * * * * * * * * // DEBUT ANIMATION D'ACCUEIL // * * * * * * * * * * * * * * * * * * * * * * *
+
+(NOTE : LE JEU SE MET EN PLEIN ECRAN AUTOMATIQUE)
+
+
+                            / \         8888888b.    .d8888b.    .d8888b    .d8888b
+                           / | \        888  'Y88b   88k   88k   88k        88k
+                          /  |  \       888.d88p     88k   88k   'Y8888b.   'Y8888b.
+                         /   *   \      888  'Y88b   88k   88k        X88        X88
+                        /_________\     88888888p'   'd8888b'     88888p'    88888p'
+---------------------------------------------------------------------------------------
+                            ---
+                           (O O)
+                            |=|
+                           .-|-.
+                          //| |\
+                        _// | | \_
+                       =./ {.-.} .=
+                           || ||
+                           || ||
+                         __|| ||__
+                        '---' '---' HA HA JE VAIS VOUS TUEZ
+ ---------------------------------------------------------------------------------------
+ (Animation explosion d'un vaisseau)
+
+    (*)
+
+
+                         *  *
+      -  - -  -         *  *  *
+                         *  *
+ ---------------------------------------------------------------------------------------
+          .d8888b   8888888b.     8888b.      .d888888    8888888
+          88k       888  'Y88b       '88b    .d8888       888
+          'Y8888b.  888  .d88p  .d8888888    888          88888
+               X88  8888888'    888   888    .d8888       888
+           88888p'  888         'Y8888888     .d888888    8888888
+
+     888  88888b.    888  888    8888b.   8888888b.   8888888  8888888b.
+     888  888  '88b  888  888       '88b  888    88b  888      888  'Y88b
+     888  888   888  Y88  88Y  .d8888888  888    88b  88888    888  .d88p
+     888  888   888   Y8bd8Y   888   888  888    88b  888      888888Y'
+     888  888   888    Y88Y    'Y8888888  8888888b'   8888888  888   8888.
+    _________________________________________________________________________
+
+
+
+CE N'EST QU'UNE ANIMATION DU DEBUT QUI NE SE FAIT QU'UNE FOIS
+
+* * * * * * * * * * * * * * * * * * * * * * * // FIN ANIMATION D'ACCUEIL // * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * // DEBUT MENU // * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+                                Z et S pour surfer dans le menu et A pour valider
+
+
+                                Menu Principale
+
+                                -> JOUER
+                                HISTORIQUE DES SCORE
+                                QUITTER
+
+--------------------------------------------------------------------------------------------
+
+                                Menu Jouer
+
+                                -> JOUER
+                                PARAMETRE
+                                MODE DE JEU
+                                CHOIX DU SKIN
+                                QUITTER
+
+---------------------------------------------------------------------------------------------
+
+                                entrer un pseudo (15 caractere max):
+
+( Dans cette étape si votre pseudo ne fait pas 15 caractère il faudra remplir toute les cases manquante avec des espaces et ensuite faire entrer)
+---------------------------------------------------------------------------------------------
+
+                                 votre pseudo est: ----
+                                voulez vous changer de pseudo? le score realiser sera enregistrer a ce nom...
+
+                                ->oui
+                                non
+
+---------------------------------------------------------------------------------------------
+
+                                entrer un pseudo :
+
+---------------------------------------------------------------------------------------------
+
+                                Choix de la difficulter:
+
+                                Enfant
+                                -> Easy
+                                Moyen
+                                Difficile
+                                Cauchemar
+
+( Cette fonctionalité apparait aussi pour le mode infini meme si il n'a aucun impact sur ce mode de jeu)
+---------------------------------------------------------------------------------------------///////
+
+                                Menu Jouer
+
+                                JOUER
+                                -> PARAMETRE
+                                MODE DE JEU
+                                CHOIX DU SKIN
+                                QUITTER
+
+
+                                Choix des reglages
+                                -> Choix azerty
+                                Choix qwerty
+
+(Cette fonctionnalité ne fonctionne pas)
+---------------------------------------------------------------------------------------------
+
+                                Menu Jouer
+
+                                JOUER
+                                PARAMETRE
+                                -> MODE DE JEU
+                                CHOIX DU SKIN
+                                QUITTER
+
+
+
+choisie ton mode de jeu
+                                -> Mode infinie(par defaut)
+                                Mode aventure
+
+---------------------------------------------------------------------------------------------
+
+                                Menu Jouer
+
+                                JOUER
+                                PARAMETRE
+                                MODE DE JEU
+                                -> CHOIX DU SKIN
+                                QUITTER
+
+
+
+                                Choix du skin:
+
+                                -> skin par defaut- (*)
+                                Imperial TIE-    |-|
+                                Supersonic-      -^-
+                                Amiral TIE-      <->
+
+ (Cette fonctionnalité ne fonctionne pas)
+---------------------------------------------------------------------------------------------
+
+                                Menu Jouer
+
+                                JOUER
+                                PARAMETRE
+                                MODE DE JEU
+                                CHOIX DU SKIN
+                                -> QUITTER
+
+
+                                Z et S pour surfer dans le menu et A pour valider
+
+
+                                Menu Principale
+
+                                JOUER
+                                HISTORIQUE DES SCORE
+                                 -> QUITTER
+
+
+                                Etes-vous sur de vouloir quitter le jeu?
+                                -> oui
+                                non
+---------------------------------------------------------------------------------------------
+
+                                Z et S pour surfer dans le menu et A pour valider
+
+
+                                Menu Principale
+
+                                JOUER
+                                -> HISTORIQUE DES SCORE
+                                QUITTER
+
+
+                                historique des scores
+ a realiser ------ de point
+ a realiser ------ de point
+ a realiser ------ de point
+ a realiser ------ de point
+ a realiser ------ de point
+
+Appuyer sur entrer pour continuer...
+
+
+--> Bilan des tests
+
+Plusieurs fonctionnalité du menu ne fonctionne pas. On a sur estimé nos capacités et aussi par faute de temps car on s'y est pris trop tard
+* * * * * * * * * * * * * * * * * * * * * * * * * * // FIN MENU // * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * // DEBUT JEU MODE AVENTURE / INFINI // * * * * * * * * * * * * * * * * * * * * * * * * * * *
+LE MODE DE JEU AVENTURE ET INFINI SONT IDENTIQUES
+LA SEUL DIFFERENCE C'EST QUE DANS LE MODES AVENTURES IL Y A UN BOSS
+ET QUE DANS LE MODES INFINI LA DIFFICULTES AUGMENTENT AU FUR ET A MESURE
+
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *              Vaisseau enemi : ' -<0>- '
+*                                                                *              Vaisseau piege : ' -<X>- '
+*                                                                *              Vitamine :       '  <+>  '
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *              Vie:5
+*                                                                *              Ammo:9
+*                                                                *              Score:0
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                             (*)                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+*                                                                *
+------------------------------------------------------------------
+
+
+--> Bilan des test: Le joueur peut se déplacer dans les 4 directions     :  OK
+                    Jeu fluide                                           :  OK
+                    Apparition des enemi à des positions aléatoires      :  OK
+        Apparition aléatoire des enemis piège et vitamines dans le temps :  OK
+                    GAME OVER quand joueur n'a plus de vie               :  OK
+                    Tir                                                  :  OK ( Quand plusieurs enemis sont aligné le laser tue le plus éloigné uniquement)
+                    Pas de tir quand plus de munition                    :  OK
+                    Joueur déplacement uniquement dans cadre             :  OK
+                    1 point par enemi évité                              :  OK
+                    10 point par enemi détruit                           :  OK
+                    MOUVEMENT BLOQUE PENDANT 5 SEC PAR ENEMI PIEGE       :  OK
+
+
+                    UNIQUEMENT MODE INFINI
+                    Evolution du niveau dans le temp    : OK
+
+
+Il n'y a pas vraiment de problème a signaler a par le fait qu'on entre pas forcément en collision avec les enemis quand le vaisseau du joueur avance en
+même temps que un vaiseau enemi descend.
+
+Autre problème d'affichage quand plusieurs enemi  se chevauche. L'enemi derrière l'enemi qui est devant lui d'une ligne en plus disparait.
+
+PS: Les scores négatifs sont voulu.
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * // FIN JEU MODE AVENTURE / INFINI // * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * // DEBUT JEU MODE AVENTURE - BOSS // * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+                / \         8888888b.    .d8888b.    .d8888b    .d8888b
+               / | \        888  'Y88b   88k   88k   88k        88k
+              /  |  \       888.d88p     88k   88k   'Y8888b.   'Y8888b.
+             /   *   \      888  'Y88b   88k   88k        X88        X88
+            /_________\     88888888p'   'd8888b'     88888p'    88888p'
+
+
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                     ---                                                                             *
+            *                                                                    (O O)                                                                            *
+            *                                                                     |=|                                                                             *
+            *                                                                    .-|-.                                                                            *
+            *                                                                   //| |\                                                                            *
+            *                                                                 _// | | \_                                                                          *
+            *                                                                =./ {.-.} .=                                                                         *
+            *                                                                    || ||                                                                            *
+            *                                                                  __|| ||__                                                                          *
+            *                                                                 '---' '---'                                                                         *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *                   Vie:5
+            *                                                                                                                                                     *                   Ammo:oo
+            *                                                                                                                                                     *                   Score:0
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *   (*)                                                                                                                                               *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            *                                                                                                                                                     *
+            -------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                VIE BOSS :10
+
+Apparition du Boss à un certain temp de jeu
+
+--> BILAN DES TEST :
+        TIR DU BOSS DE FACON ALEATOIRE DANS LE TEMP    : OK
+        DEPLACEMENT LATERAL DU BOSS                    : OK
+        PERTE DE VIE COLLISION LASER BOSS-JOUEUR       : OK
+        PERTE DE VIE COLLISION LASER JOUEUR-BOSS       : OK
+        FIN DU JEU QUAND BOSS MORT                     : OK
+        FIN DU JEU QUAND JOUEUR MORT                   : OK
+        MUNITION INFINI                                : OK
+        300 POINT QUAND BOSS DETRUIT                   : OK
+    JOUEUR MOUVEMENT 4 DIRECTIONS ET LIMITE PAR CADRE  : OK
+
+OK PROBLEME A SIGNALER
+* * * * * * * * * * * * * * * * * * * * * * * * * * // FIN JEU MODE AVENTURE - BOSS // * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| BILAN DES TEST ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Aucun problème majeur a signaler à par le menu qui ne fonctionne pas entièrement.
+
+*Le jeu semble correct sans compter les quelques petit bug d'affichage car les enemi se chevauche.
+
+*Faute de temps et de surestimation de nos capacités, le jeu n'a pas pu respecté entièrement le cahier des charges
+
+*Quelques détails ont été modifié même si ils ne respectent pas le cahier des charges, pour améliorer la jouabilité du jeu.
+Tels que la quantité de vie, de munitions etc...
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| BILAN DES TEST ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+****************************************************************************************************************************/
+
+
+
+#include <windows.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <time.h>
+
+void gotoxy(int x, int y);
+void color(int cT,int cF);
+
+int FonctionJeuInf(int score,int i,int j,int y0,int y1,int y2,int y3,int y4,int y5,int y6,int y7,int y8,int y9,int tabYEnemi[100],int tabXEnemi[30],int t,int f,int tabMort[10],int tabTempMort[10],int vie,int tir,int k,int tabAlea[10],int plus,int munition,int tabStop[10],int xj,int yj,char mouvement);
+int FonctionJeuAv(int score,int i,int j,int y0,int y1,int y2,int y3,int y4,int y5,int y6,int y7,int y8,int y9,int tabYEnemi[100],int tabXEnemi[30],int t,int f,int tabMort[10],int tabTempMort[10],int vie,int tir,int k,int tabAlea[10],int plus,int munition,int tabStop[10],int xj,int yj,char mouvement,int tabDifficulte[1]);
+int MenuJeu(int tabscore[10],int tabDifficulte[1],char skin[3],char tabname[50],char tabname1[15],char tabname2[15],char tabname3[15],char tabname4[15],char tabname5[15],char ca[15]);
+void Animation();
+
+int main()
+{
+    int score=0,i=0,j,y0=0,y1=0,y2=0,y3=0,y4=0,y5=0,y6=0,y7=0,y8=0,y9=0,tabYEnemi[100],tabXEnemi[30],t=0,f=0,tabMort[10],tabTempMort[10],vie=5,tir,k=1,tabAlea[10],plus,munition=10,tabStop[10],xj=30,yj=43;
+    char mouvement;
+    int Modejeu=1,choix=0;
+    char tabname[50],tabname1[15], tabname2[15], tabname3[15], tabname4[15], tabname5[15],  ca[15],skin[3];
+    int tabscore[10],tabDifficulte[1];
+    HWND hwnd=GetForegroundWindow();
+    ShowWindow(hwnd,SW_MAXIMIZE);
+    srand(time(NULL));
+
+
+
+    Animation();
+    while (choix !=1)
+    {
+        system ("color 0A");
+        Modejeu=MenuJeu(tabscore,tabDifficulte,skin,tabname,tabname1,tabname2,tabname3,tabname4,tabname5,ca);
+
+        if (Modejeu==1)
+        {
+            system("cls");
+            system ("color 0F");
+            score=FonctionJeuInf(score,i,j,y0,y1,y2,y3,y4,y5,y6,y7,y8,y9,tabYEnemi,tabXEnemi,t,f,tabMort,tabTempMort,vie,tir,k,tabAlea,plus,munition,tabStop,xj,yj,mouvement);
+
+        }
+        else if (Modejeu==2)
+        {
+            system("cls");
+            system ("color 0F");
+            score=FonctionJeuAv(score,i,j,y0,y1,y2,y3,y4,y5,y6,y7,y8,y9,tabYEnemi,tabXEnemi,t,f,tabMort,tabTempMort,vie,tir,k,tabAlea,plus,munition,tabStop,xj,yj,mouvement,tabDifficulte);
+
+        }
+        system("cls");
+        printf("\n\t\tVoulez vous quittez ? Oui (1) Non((Autre touche) : %");
+        scanf("%d",&choix);
+        system("cls");
+        score=0;
+    }
+}
+
+
+
+
+
+int FonctionJeuAv(int score,int i,int j,int y0,int y1,int y2,int y3,int y4,int y5,int y6,int y7,int y8,int y9,int tabYEnemi[100],int tabXEnemi[30],int t,int f,int tabMort[10],int tabTempMort[10],int vie,int tir,int k,int tabAlea[10],int plus,int munition,int tabStop[10],int xj,int yj,char mouvement,int tabDifficulte[1])
+/** Cette fonction est le mode de jeu 'Aventure', Elle possède les mêmes caractéristique que le mode infini sauf qu'il y a un boss en plus
+    et que le niveau de difficulté est fixe.
+**/
+{
+    int waw,x, pause=0,vitesse;
+
+    /// DEBUT SELECTION NIVEAU DE DIFFICULTE
+    if (tabDifficulte[0]==1)
+    {
+        vitesse=100;
+    }
+    else if (tabDifficulte[0]==2)
+    {
+        vitesse=80;
+    }
+    else if (tabDifficulte[0]==3)
+    {
+        vitesse=60;
+    }
+    else if (tabDifficulte[0]==4)
+    {
+        vitesse=40;
+    }
+    else if (tabDifficulte[0]==5)
+    {
+        vitesse=20;
+    }
+
+    /// FIN SELECTION NIVEAU DE DIFFICULTE
+
+
+    for (i=0; i<100; i++) /// Initialisation des coordonnée en Y
+    {
+        tabYEnemi[i]=i;
+    }
+
+    for (i=0; i<30; i++) /// Initialisation des coordonée en X de façon aléatoire et qui change à chaque tour de la boucle while
+    {
+        tabXEnemi[i]=rand()%55+3;
+    }
+
+    for (i=0; i<8; i++) /// Initialisation des valeur des tab a 0 pour eviter prob
+    {
+        tabMort[i]=0;
+        tabTempMort[i]=0;
+    }
+
+    /// DEBUT AFFICHAGE BORDURE
+    for (i=0; i<47; i++)
+    {
+        gotoxy(0,i);
+        printf("*");
+        gotoxy(65,i);
+        printf("*");
+    }
+    for (j=0; j<=65; j++)
+    {
+        gotoxy(j,47);
+        printf("-");
+    }
+    /// FIN AFFICHAGE BORDURE
+
+
+    while ((vie>0) && (t < 800)) /// Condition générale du jeu elle s'arrête si personnage mort ou à un certain temp 't' phase contre boss
+        /// Changer la condition de t pour changer le temp avant d'arriver aux boss
+    {
+        /// DEBUT COLLISION VAISSEAU PIEGE JOUEUR
+        if ((xj>=tabXEnemi[9]-2) && (xj<=tabXEnemi[9]+4)&&(tabYEnemi[y9+1]==yj)) // Condition de la collision
+        {
+            gotoxy(tabXEnemi[9],tabYEnemi[y9+1]); // gotoxy pour effacer le vaisseau enemi
+            printf("         ");
+            tabStop[1]=0; // pour arrêter l'affectation aléatoire de la variable pour faire apparaitre l'enemi
+            tabStop[4]=1; // pour activer le chrono pour que le joueur ne bouge plus pendant  5 sec
+            y9=0; // remise position initiale
+            tabXEnemi[9]=rand()%55+3; // remise position initiale
+            vie=vie-1;
+        }
+        /// FIN COLLISION VAISSEAU PIEGE JOUEUR
+
+        t=t+1; /// variable de temp du jeu
+
+        /// DEBUT MOUVEMENT JOUEUR
+        if(kbhit() == 1 && tabStop[4] !=1)
+        {
+            mouvement = getch();
+            if(mouvement=='q') xj=xj-2;
+            if(mouvement=='d') xj=xj+2;
+            if(mouvement=='z') yj=yj-1;
+            if(mouvement=='s') yj=yj+1;
+            if(mouvement=='a') tir=1;
+            if(mouvement==27) return(0);
+        }
+
+        if (tabStop[4]==1) // condition pour activer chrono pour que joueur ne bouge plus pendant 5 sec
+        {
+            tabTempMort[8]=tabTempMort[8]+1;
+            if (tabTempMort[8] > 50)
+            {
+                tabStop[4]=0; // arrêt du chrono
+                tabTempMort[8]=0; // remise a 0 du temp
+            }
+        }
+
+        /// DEBUT LIMITE MOUVEMENT JOUEUR
+        if (xj>60)
+        {
+            xj=xj-2;
+        }
+        else if (xj<3)
+        {
+            xj=xj+2;
+        }
+        else if (yj>45)
+        {
+            yj=yj-1;
+        }
+        else if(yj<10)
+        {
+            yj=yj+1;
+        }
+        /// FIN LIMITE MOUVEMENT JOUEUR
+
+        gotoxy( xj, yj); // affichage du vaisseau joueur
+        printf("(*)");
+        Sleep(vitesse);
+        gotoxy( xj, yj);
+        printf("    ");
+
+        /// FIN MOUVEMENT  JOUEUR
+
+
+/// DEBUT COLLISION
+        if ((xj>=tabXEnemi[0]-2) && (xj<=tabXEnemi[0]+4)&&(tabYEnemi[y0+1]==yj)) // condition collision pour vaisseau 1
+        {
+            gotoxy(tabXEnemi[0],tabYEnemi[y0+1]); // gotoxy pour effacer le vaisseau enemi
+            printf("         ");
+            tabMort[0]=1;       // affectation pour éviter que le vaisseau enemi 1 reapparait directement
+            y0=0; // reprend position initiale
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[1]-2) && (xj<=tabXEnemi[1]+4)&&(tabYEnemi[y1+1]==yj))// condition collision pour vaisseau 2
+        {
+            gotoxy(tabXEnemi[1],tabYEnemi[y1+1]);// gotoxy pour effacer le vaisseau enemi
+            printf("         ");
+            tabMort[1]=1;       // affectation pour éviter que le vaisseau enemi 2 reapparait directement
+            y1=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[2]-2) && (xj<=tabXEnemi[2]+4)&&(tabYEnemi[y2+1]==yj))// condition collision pour vaisseau 3
+        {
+            gotoxy(tabXEnemi[2],tabYEnemi[y2+1]);// gotoxy pour effacer le vaisseau enemi
+            printf("         ");
+            tabMort[2]=1;       // affectation pour éviter que le vaisseau enemi 3 reapparait directement
+            y2=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[3]-2) && (xj<=tabXEnemi[3]+4)&&(tabYEnemi[y3+1]==yj))// condition collision pour vaisseau 4
+        {
+            gotoxy(tabXEnemi[3],tabYEnemi[y3+1]);// gotoxy pour effacer le vaisseau enemi
+            printf("         ");
+            tabMort[3]=1;       // affectation pour éviter que le vaisseau enemi 4 reapparait directement
+            y3=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[4]-2) && (xj<=tabXEnemi[4]+4)&&(tabYEnemi[y4+1]==yj))// condition collision pour vaisseau 5
+        {
+            gotoxy(tabXEnemi[4],tabYEnemi[y4+1]);// gotoxy pour effacer le vaisseau enemi
+            printf("         ");
+            tabMort[4]=1;       // affectation pour éviter que le vaisseau enemi 5 reapparait directement
+            y4=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[5]-2) && (xj<=tabXEnemi[5]+4)&&(tabYEnemi[y5+1]==yj))// condition collision pour vaisseau 6
+        {
+            gotoxy(tabXEnemi[5],tabYEnemi[y5+1]);// gotoxy pour effacer le vaisseau enemi
+            printf("         ");
+            tabMort[5]=1;       // affectation pour éviter que le vaisseau enemi 6 reapparait directement
+            y5=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[6]-2) && (xj<=tabXEnemi[6]+4)&&(tabYEnemi[y6+1]==yj))// condition collision pour vaisseau 7
+        {
+            gotoxy(tabXEnemi[6],tabYEnemi[y6+1]);// gotoxy pour effacer le vaisseau enemi
+            printf("         ");
+            tabMort[6]=1;       // affectation pour éviter que le vaisseau enemi 7 reapparait directement
+            y6=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[7]-2) && (xj<=tabXEnemi[7]+4)&&(tabYEnemi[y7+1]==yj))// condition collision pour vaisseau 8
+        {
+            gotoxy(tabXEnemi[7],tabYEnemi[y7+1]);// gotoxy pour effacer le vaisseau enemi
+            printf("         ");
+            tabMort[7]=1;       // affectation pour éviter que le vaisseau enemi 8 reapparait directement
+            y7=0;
+            vie=vie-10;
+        }
+        else if ((xj>=tabXEnemi[8]-2) && (xj<=tabXEnemi[8]+2)&&(tabYEnemi[y8+1]==yj))// condition collision pour vitamine
+        {
+            gotoxy(tabXEnemi[8],tabYEnemi[y8+1]);// gotoxy pour effacer la vitamine
+            printf("           ");
+            tabStop[0]=0;   // affectation pour reprendre une affectation d'une variable prenant des valeurs aléatoire au cours du temp pour faire apparaitre vitamine
+            y8=0; // reprend position initiale
+            tabXEnemi[8]=rand()%55+3;// reprend position initiale aleatoire
+            vie=vie+1;
+            if (vie > 5) // limite de vie
+            {
+                vie=vie-1;
+            }
+            munition=munition+5;
+            score=score+20;
+        }
+        /// FIN COLLISION
+
+
+/// DEBUT LASERCOLLISION
+        if  ((xj>=tabXEnemi[0]-1) && (xj<=tabXEnemi[0]+4)&& (tir==1)&&(tabYEnemi[y0]>4)&&(tabYEnemi[y0]<=yj) && (munition>0))
+            /// condition prenant en compte position enemi , joueur, si tir est activité et si possession de munition
+        {
+            gotoxy(tabXEnemi[0],tabYEnemi[y0+1]); // effacer vaisseau enemi
+            printf("         ");
+            y0=0;       // reprend position initiale
+            tabMort[0]=1;   // stop pendant un instant la reapparition de l'enemi
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[1]-1) && (xj<=tabXEnemi[1]+4) && (tir==1)&& (tabYEnemi[y1]>4) && (tabYEnemi[y1]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[1],tabYEnemi[y1+1]);// effacer vaisseau enemi
+            printf("         ");
+            y1=0;
+            tabMort[1]=1;
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[2]-1) && (xj<=tabXEnemi[2]+4) && (tir==1) && (tabYEnemi[y2]>4) &&(tabYEnemi[y2]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[2],tabYEnemi[y2+1]);// effacer vaisseau enemi
+            printf("         ");
+            y2=0;
+            tabMort[2]=1;
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[3]-1) && (xj<=tabXEnemi[3]+4)&& (tir==1) && (tabYEnemi[y3]>4) &&(tabYEnemi[y3]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[3],tabYEnemi[y3+1]);// effacer vaisseau enemi
+            printf("         ");
+            y3=0;
+            tabMort[3]=1;
+            score=score+30;
+        }
+        else if  ((xj>=tabXEnemi[4]-1) && (xj<=tabXEnemi[4]+4) && (tir==1) && (tabYEnemi[y4]>4) && (tabYEnemi[y4]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[4],tabYEnemi[y4+1]);// effacer vaisseau enemi
+            printf("         ");
+            y4=0;
+            tabMort[4]=1;
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[5]-1) && (xj<=tabXEnemi[5]+4) && (tir==1) && (tabYEnemi[y5]>4) && (tabYEnemi[y5]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[5],tabYEnemi[y5+1]);// effacer vaisseau enemi
+            printf("         ");
+            y5=0;
+            tabMort[5]=1;
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[6]-1) && (xj<=tabXEnemi[6]+4) && (tir==1) && (tabYEnemi[y6]>4) && (tabYEnemi[y6]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[6],tabYEnemi[y6+1]);// effacer vaisseau enemi
+            printf("         ");
+            y6=0;
+            tabMort[6]=1;
+            score=score+30;
+        }
+        else if  ((xj>=tabXEnemi[7]-1) && (xj<=tabXEnemi[7]+4) && (tir==1) && (tabYEnemi[y7]>4) && (tabYEnemi[y7]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[7],tabYEnemi[y7+1]);// effacer vaisseau enemi
+            printf("         ");
+            y7=0;
+            tabMort[7]=1;
+            score=score+30;
+        }
+        else if  ((xj>=tabXEnemi[9]-1) && (xj<=tabXEnemi[9]+4) && (tir==1) && (tabYEnemi[y9]>4) && (tabYEnemi[y9]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[9],tabYEnemi[y9+1]);// effacer vaisseau enemi
+            printf("         ");
+            y9=0;
+            tabStop[1]=0;
+            tabXEnemi[9]=rand()%55+3;
+            score=score+30;
+        }
+/// FIN LASERCOLLI
+
+
+        /// DEBUT TIR
+        if ((tir==1) && (munition>0)) /// TIR si la touche est appuyé et si il y a  assez de munition
+        {
+            while (yj-k >5) // boucle while pour que le laser s'arrête a y=5
+            {
+                gotoxy( xj+1, yj-k);
+                printf("|");
+                k=k+1;
+            }
+            tir=0;      // affectation du tir a 0 pour LASERCOLLI
+            k=1;        // k=1 car meme procédure pour effacer laser
+            Sleep(50);
+            while (yj-k >5)
+            {
+                gotoxy( xj+1, yj-k);
+                printf(" ");
+                k=k+1;
+            }
+            k=1;
+            munition=munition-1;
+        }
+        ///FIN TIR
+
+
+/// DEBUT MORT ENEMI
+        if (tabMort[0]==1) // variable si activé , active un chrono
+        {
+            tabXEnemi[0]=rand()%55+3; // reinitialise la position d'enemi en x
+            tabTempMort[0]=tabTempMort[0]+1; // chrono
+            if (tabTempMort[0]>40)
+            {
+                tabMort[0]=0; // arrêt variable d'activation du chrono
+                tabTempMort[0]=0; // remise a zero du chrono
+            }
+        }
+        else if (tabMort[1]==1)
+        {
+            tabXEnemi[1]=rand()%55+3;
+            tabTempMort[1]=tabTempMort[1]+1;
+            if (tabTempMort[1]>40)
+            {
+                tabMort[1]=0;
+                tabTempMort[1]=0;
+            }
+        }
+        else if (tabMort[2]==1)
+        {
+            tabXEnemi[2]=rand()%55+3;
+            tabTempMort[2]=tabTempMort[2]+1;
+            if (tabTempMort[2]>40)
+            {
+                tabMort[2]=0;
+                tabTempMort[2]=0;
+            }
+        }
+        else if (tabMort[3]==1)
+        {
+            tabXEnemi[3]=rand()%55+3;
+            tabTempMort[3]=tabTempMort[3]+1;
+            if (tabTempMort[3]>40)
+            {
+                tabMort[3]=0;
+                tabTempMort[3]=0;
+            }
+        }
+        else if (tabMort[4]==1)
+        {
+            tabXEnemi[4]=rand()%55+3;
+            tabTempMort[4]=tabTempMort[4]+1;
+            if (tabTempMort[4]>40)
+            {
+                tabMort[4]=0;
+                tabTempMort[4]=0;
+            }
+        }
+        else if (tabMort[5]==1)
+        {
+            tabXEnemi[5]=rand()%55+3;
+            tabTempMort[5]=tabTempMort[5]+1;
+            if (tabTempMort[5]>40)
+            {
+                tabMort[5]=0;
+                tabTempMort[5]=0;
+            }
+        }
+        else if (tabMort[6]==1)
+        {
+            tabXEnemi[6]=rand()%55+3;
+            tabTempMort[6]=tabTempMort[6]+1;
+            if (tabTempMort[6]>40)
+            {
+                tabMort[6]=0;
+                tabTempMort[6]=0;
+            }
+        }
+        else if (tabMort[7]==1)
+        {
+            tabXEnemi[7]=rand()%55+3;
+            tabTempMort[7]=tabTempMort[7]+1;
+            if (tabTempMort[7]>40)
+            {
+                tabMort[7]=0;
+                tabTempMort[7]=0;
+            }
+        }
+/// FIN MORT ENEMI
+
+
+
+/// AFFICHAGE STATS
+        gotoxy(80,30);
+        printf("Vie:%d  ",vie);
+        gotoxy(80,31);
+        printf("Ammo:%d  ",munition);
+        gotoxy(80,32);
+        printf("Score:%d  ",score);
+        gotoxy(80,20);
+        printf("Vaisseau enemi : ' -<0>- '");
+        gotoxy(80,21);
+        printf("Vaisseau piege : ' -<X>- '");
+        gotoxy(80,22);
+        printf("Vitamine :       '  <+>  '");
+/// AFFICHAGE STATS
+
+
+
+///DEBUT APPARITION MONSTRE
+        if (tabMort[0]!=1) // condition si le vaisseau est 'mort', il n'apparait pas
+        {
+            y0=y0+1;
+            gotoxy(tabXEnemi[0],tabYEnemi[y0]);
+            printf("      ");
+            gotoxy(tabXEnemi[0],tabYEnemi[y0+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y0]>45) // reprend une position initiale aleatoire quand a fini son chemin
+            {
+                y0=1;
+                tabXEnemi[0]=rand()%55+3;
+                score=score+1;      // un point en plus car enemi n'a pas toucher joueur
+                gotoxy(0,47);       // permet de faire une delimitation est effacer les vaisseau tout en bas car le gotoxy d'avant n'y arrive pas
+                printf("------------------------------------------------------------------");
+            }
+        }
+
+        if (t>70 && tabMort[1]!=1)
+
+        {
+            y1=y1+1;
+            gotoxy(tabXEnemi[1],tabYEnemi[y1]);
+            printf("      ");
+            gotoxy(tabXEnemi[1],tabYEnemi[y1+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y1]>45)
+            {
+
+                y1=0;
+                tabXEnemi[1]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+
+        if (t>150 && tabMort[2]!=1)
+
+        {
+            y2=y2+1;
+            gotoxy(tabXEnemi[2],tabYEnemi[y2]);
+            printf("      ");
+            gotoxy(tabXEnemi[2],tabYEnemi[y2+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y2]>45)
+            {
+                y2=0;
+                tabXEnemi[2]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+
+        if (t>250 && tabMort[3]!=1)
+
+        {
+            y3=y3+1;
+            gotoxy(tabXEnemi[3],tabYEnemi[y3]);
+            printf("      ");
+            gotoxy(tabXEnemi[3],tabYEnemi[y3+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y3]>45)
+            {
+                y3=0;
+                tabXEnemi[3]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>380 && tabMort[4]!=1)
+
+        {
+            y4=y4+1;
+            gotoxy(tabXEnemi[4],tabYEnemi[y4]);
+            printf("      ");
+            gotoxy(tabXEnemi[4],tabYEnemi[y4+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y4]>45)
+            {
+                y4=0;
+                tabXEnemi[4]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>440 && tabMort[5]!=1)
+
+        {
+            y5=y5+1;
+            gotoxy(tabXEnemi[5],tabYEnemi[y5]);
+            printf("      ");
+            gotoxy(tabXEnemi[5],tabYEnemi[y5+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y5]>45)
+            {
+                y5=0;
+                tabXEnemi[5]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>580 && tabMort[6]!=1)
+
+        {
+            y6=y6+1;
+            gotoxy(tabXEnemi[6],tabYEnemi[y6]);
+            printf("      ");
+            gotoxy(tabXEnemi[6],tabYEnemi[y6+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y6]>45)
+            {
+                y6=0;
+                tabXEnemi[6]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>780 && tabMort[7]!=1)
+        {
+            y7=y7+1;
+            gotoxy(tabXEnemi[7],tabYEnemi[y7]);
+            printf("      ");
+            gotoxy(tabXEnemi[7],tabYEnemi[y7+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y7]>45)
+            {
+                y7=0;
+                tabXEnemi[7]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        /// FIN MONSTRE
+
+
+
+
+        /// Apparition vitamine ( Apparition totalement aléatoire au cours du temp)
+        if (tabStop[0]!=1) // condition si tabStop=1 arrête l'affectation aleatoire de tabAlea
+        {
+            tabAlea[0]=rand()%50;
+        }
+        if (tabAlea[0] ==3)
+        {
+            tabStop[0]=1; //arrête l'affectation aléatoire
+            y8=y8+1;
+            gotoxy(tabXEnemi[8],tabYEnemi[y8]);
+            printf("   ");
+            gotoxy(tabXEnemi[8],tabYEnemi[y8+1]);
+            printf("<+>");
+        }
+        if (tabYEnemi[y8]>45)
+        {
+            y8=0;
+            tabXEnemi[8]=rand()%55+3;
+            tabStop[0]=0; // remet en route l'affectation aléatoire
+            gotoxy(0,47); // delimite est efface vaisseau tout en bas
+            printf("------------------------------------------------------------------");
+        }
+        /// FIN APPARITION VITAMINE
+
+
+
+        /// DEBUT Apparition ENEMI PIEGE (meme principe que la vitamine)
+        if (tabStop[1]!=1)
+        {
+            tabAlea[1]=rand()%100;
+        }
+        if (tabAlea[1] ==3)
+        {
+            tabStop[1]=1;
+            y9=y9+1;
+            gotoxy(tabXEnemi[9],tabYEnemi[y9]);
+            printf("     ");
+            gotoxy(tabXEnemi[9],tabYEnemi[y9+1]);
+            printf("-<X>-");
+        }
+        if (tabYEnemi[y9]>45)
+        {
+            y9=0;
+            tabXEnemi[9]=rand()%55+3;
+            tabStop[1]=0;
+            gotoxy(0,47);
+            printf("------------------------------------------------------------------");
+        }
+        /// FIN APPARITION ENEMI PIEGE
+
+    }
+
+    /// DEBUT BOSS INCOMMING ( phase Boss du jeu)
+    if (vie > 0)  // condition pour arriver au boss car joueur peut mourrir avant d'arriver au boss
+    {
+        waw=0;
+        system("cls");// message BOSS INCOMMING
+        printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t        / \\\         8888888b.    .d8888b.    .d8888b    .d8888b         ");
+        printf("\n\t\t\t\t\t\t\t\t\t       / | \\\        888  'Y88b   88k   88k   88k        88k             ");
+        printf("\n\t\t\t\t\t\t\t\t\t      /  |  \\\       888.d88p     88k   88k   'Y8888b.   'Y8888b.        ");
+        printf("\n\t\t\t\t\t\t\t\t\t     /   *   \\\      888  'Y88b   88k   88k        X88        X88        ");
+        printf("\n\t\t\t\t\t\t\t\t\t    /_________\\\     88888888p'   'd8888b'     88888p'    88888p'        ");
+        while(waw!=7) // faire scintiller le message
+        {
+            system ("color 04");
+            Sleep(80);
+            system ("color 0F");
+            Sleep(80);
+            waw=waw+1;
+        }
+        /// DEBUT EFFACEMENT MESSAGE BOSS INCOMMING
+        for (i=0; i<6; i++)
+        {
+            gotoxy(75,i+20);
+            printf("                                                               ");
+            Sleep(150);
+        }
+        /// FIN EFFACEMENT MESSAGE BOSS INCOMMING
+
+        /// DEBUT MISE EN PLACE BORDURE
+        for (i=0; i<47; i++)
+        {
+            gotoxy(30,i);
+            printf("*");
+            Sleep(10);
+            gotoxy(180,i);
+            printf("*");
+        }
+        for (j=0; j<=150; j++)
+        {
+            gotoxy(j+30,47);
+            Sleep(10);
+            printf("-");
+        }
+        /// FIN MISE EN PLACE BORDURE
+
+        /// Affectation prérequis
+        tabXEnemi[10]=80;
+        tabMort[10]=10;
+        x=1;
+        /// Affectation prérequis
+
+        while (tabMort[10]>0 && vie >0) // Tant que le boss ou le joueur n'est pas mort, la phase boss continue
+        {
+
+            /// DEBUT MOUVEMENT JOUEUR
+            if(kbhit() == 1)
+            {
+                mouvement = getch();
+                if(mouvement=='q') xj=xj-2;
+                if(mouvement=='d') xj=xj+2;
+                if(mouvement=='z') yj=yj-1;
+                if(mouvement=='s') yj=yj+1;
+                if(mouvement=='a') tir=1;
+                if(mouvement==27) return(0);
+            }
+
+            /// DEBUT LIMITE MOUVEMENT JOUEUR
+            if (xj>175)
+            {
+                xj=xj-2;
+            }
+            else if (xj<33)
+            {
+                xj=xj+2;
+            }
+            else if (yj>45)
+            {
+                yj=yj-1;
+            }
+            else if(yj<20)
+            {
+                yj=yj+1;
+            }
+            /// FIN LIMITE MOUVEMENT JOUEUR
+            gotoxy( xj, yj);
+            printf("(*)");
+            Sleep(50);
+            gotoxy( xj, yj);
+            printf("    ");
+            /// FIN MOUVEMENT JOUEUR
+
+
+            /// DEBUT  AFFICHAGE BOSS
+            gotoxy(tabXEnemi[10],4);
+            printf("       ---      ");
+            gotoxy(tabXEnemi[10],5);
+            printf("      (O O)     ");
+            gotoxy(tabXEnemi[10],6);
+            printf("       |=|      ");
+            gotoxy(tabXEnemi[10],7);
+            printf("      .-|-.     ");
+            gotoxy(tabXEnemi[10],8);
+            printf("     //| |\\    ");
+            gotoxy(tabXEnemi[10],9);
+            printf("   _// | | \\_  ");
+            gotoxy(tabXEnemi[10],10);
+            printf("  =./ {.-.} \.=  ");
+            gotoxy(tabXEnemi[10],11);
+            printf("      || ||     ");
+            gotoxy(tabXEnemi[10],12);
+            printf("    __|| ||__   ");
+            gotoxy(tabXEnemi[10],13);
+            printf("   '---' '---'  ");
+
+            tabXEnemi[10]=tabXEnemi[10]+x;// variation du mouvement
+            if(tabXEnemi[10]>160) // 2 condition pour que le boss se déplace de gauche a droite et de droite a gauche
+            {
+                x=-2;
+            }
+            else if (tabXEnemi[10]<35)
+            {
+                x=2;
+            }
+            /// FIN AFFICHAGE BOSS
+
+
+
+            /// DEBUT COLLISION LASER-BOSS
+            if  ((xj>=tabXEnemi[10]-1) && (xj<=tabXEnemi[10]+14)&& (tir==1))
+            {
+                tabMort[10]=tabMort[10]-1;
+            }
+            /// FIN COLLISION LASER-BOSS
+
+
+
+
+            /// DEBUT TIR
+            if (tir==1)
+            {
+                while (yj-k >5)
+                {
+                    gotoxy( xj+1, yj-k);
+                    printf("|");
+                    k=k+1;
+                }
+                tir=0;
+                k=1;
+                Sleep(50);
+                while (yj-k >5)
+                {
+                    gotoxy( xj+1, yj-k);
+                    printf(" ");
+                    k=k+1;
+                }
+                k=1;
+            }
+            ///FIN TIR
+
+
+
+            /// DEBUT TIR BOSS (meme principe que pour le tir du joueur mais on inverse le sens et change les coordonée  et surtout les tirs sont aléatoire dans le temp)
+            if (tabStop[3]!=1)
+            {
+                tabAlea[3]=rand()%30;
+            }
+            if (tabAlea[3] ==3)
+            {
+                tir=2;// pour la condition COLLISION LASER BOSS JOUEUR
+                tabStop[3]=1; // arrêté l'affectation aléatoire
+                while (13+k <47)
+                {
+                    gotoxy( tabXEnemi[10]+5, 13+k);
+                    printf("|||||");
+                    k=k+1;
+                }
+                k=1;
+                Sleep(50);
+                while (13+k <47)
+                {
+                    gotoxy( tabXEnemi[10]+5, 13+k);
+                    printf("     ");
+                    k=k+1;
+                }
+                /// DEBUT COLLISION LASER DU BOSS-JOUEUR
+                if  ((xj>=tabXEnemi[10]+1) && (xj<=tabXEnemi[10]+10)&& (tir==2))
+                {
+                    vie=vie-1;
+                    score=score-10;
+                }
+                /// FIN COLLISION LASER DU BOSS-JOUEUR
+                tir=0;
+                k=1;
+                tabStop[3]=0; // relance l'affectation aléatoire
+            }
+            /// FIN TIR BOSS
+
+
+
+
+            /// AFFICHAGE STATS
+            gotoxy(200,30);
+            printf("Vie:%d  ",vie);
+            gotoxy(200,31);
+            printf("Ammo:oo  ");
+            gotoxy(200,32);
+            printf("Score:%d  ",score);
+            gotoxy(80,48);
+            printf("VIE BOSS :%d  ",tabMort[10]);
+            /// AFFICHAGE STATS
+        }
+
+        /// DEBUT VICTOIRE
+        if (tabMort[10]<=0)
+        {
+            score=score+300;
+            for(i=0; i<45; i++) // efface l'écran petit a petit
+            {
+                gotoxy(31,i);
+                Sleep(65);
+                printf("                                                                                                                                         ");
+            }
+            gotoxy(80,22);
+            printf("          .d8888b         .d8888b                ");
+            gotoxy(80,23);
+            printf("         88k             88k                     ");
+            gotoxy(80,24);
+            printf("         88b    888k     88b    888k             ");
+            gotoxy(80,25);
+            printf("         88k    88       88k    88               ");
+            gotoxy(80,26);
+            printf("          '88888p'        '88888p'               ");
+            while(waw!=14) // faire scintiller message
+            {
+                system ("color 04");
+                Sleep(80);
+                system ("color 0F");
+                Sleep(80);
+                waw=waw+1;
+            }
+            system("cls");
+            printf("\n\n\t\t Votre score est de %d",score);
+            /// FIN VICTOIRE
+        }
+
+        /// DEBUT DEFAITE PENDANT BOSS
+        else
+        {waw=0;
+            for(i=0; i<45; i++)// effacement de l'écran petit a petit
+            {
+                gotoxy(31,i);
+                Sleep(65);
+                printf("                                                                                                                                         ");
+            }
+            gotoxy(80,22);
+            printf("\n\t\t\t\t\t\t\t\t          .d8888b       8888b.    '888k      y888'   8888888               ");
+            gotoxy(80,23);
+            printf("\n\t\t\t\t\t\t\t\t         88k               '88b   888 8k    y8 888   888                   ");
+            gotoxy(80,24);
+            printf("\n\t\t\t\t\t\t\t\t         88b    888k  .d8888888   888  88bd88  888   88888                 ");
+            gotoxy(80,25);
+            printf("\n\t\t\t\t\t\t\t\t         88k    88    888   888   888    YY    888   888                   ");
+            gotoxy(80,26);
+            printf("\n\t\t\t\t\t\t\t\t          '88888p'    'Y8888888   888          888   8888888               ");
+            gotoxy(80,28);
+            printf("\n\t\t\t\t\t\t\t\t               .d8888b.     888  888  8888888  8888888b.        ");
+            gotoxy(80,29);
+            printf("\n\t\t\t\t\t\t\t\t               88k   88k    888  888  888      888  'Y88b       ");
+            gotoxy(80,30);
+            printf("\n\t\t\t\t\t\t\t\t               88k   88k    Y88  88Y  88888    888  .d88p       ");
+            gotoxy(80,31);
+            printf("\n\t\t\t\t\t\t\t\t               88k   88k     Y8bd8Y   888      888888Y'         ");
+            gotoxy(80,32);
+            printf("\n\t\t\t\t\t\t\t\t               'd8888b'       Y88Y    8888888  888   8888.      ");
+            gotoxy(80,33);
+            printf("\n\t\t\t\t\t\t\t\t_________________________________________________________________________   ");
+
+            while(waw!=14) // faire scintiller le message
+            {
+                system ("color 04");
+                Sleep(80);
+                system ("color 0F");
+                Sleep(80);
+                waw=waw+1;
+            }
+            system("cls");
+            printf("\n\n\t\t Votre score est de %d",score);
+            /// FIN DEFAITE PENDANT BOSS
+        }
+    }
+    /// DEBUT DEFAITE HORS BOSS
+    else
+    { waw=0;
+        system("cls");
+
+        gotoxy(80,22);
+        printf("\n\t\t\t\t\t\t\t\t          .d8888b       8888b.    '888k      y888'   8888888               ");
+        gotoxy(80,23);
+        printf("\n\t\t\t\t\t\t\t\t         88k               '88b   888 8k    y8 888   888                   ");
+        gotoxy(80,24);
+        printf("\n\t\t\t\t\t\t\t\t         88b    888k  .d8888888   888  88bd88  888   88888                 ");
+        gotoxy(80,25);
+        printf("\n\t\t\t\t\t\t\t\t         88k    88    888   888   888    YY    888   888                   ");
+        gotoxy(80,26);
+        printf("\n\t\t\t\t\t\t\t\t          '88888p'    'Y8888888   888          888   8888888               ");
+        gotoxy(80,28);
+        printf("\n\t\t\t\t\t\t\t\t               .d8888b.     888  888  8888888  8888888b.        ");
+        gotoxy(80,29);
+        printf("\n\t\t\t\t\t\t\t\t               88k   88k    888  888  888      888  'Y88b       ");
+        gotoxy(80,30);
+        printf("\n\t\t\t\t\t\t\t\t               88k   88k    Y88  88Y  88888    888  .d88p       ");
+        gotoxy(80,31);
+        printf("\n\t\t\t\t\t\t\t\t               88k   88k     Y8bd8Y   888      888888Y'         ");
+        gotoxy(80,32);
+        printf("\n\t\t\t\t\t\t\t\t               'd8888b'       Y88Y    8888888  888   8888.      ");
+        gotoxy(80,33);
+        printf("\n\t\t\t\t\t\t\t\t_________________________________________________________________________   ");
+
+        while(waw!=7)
+        {
+            system ("color 04");
+            Sleep(80);
+            system ("color 0F");
+            Sleep(80);
+            waw=waw+1;
+        }
+        system("cls");
+        printf("\n\n\t\t Votre score est de %d",score);
+    }
+    /// FIN DEFAITE HORS BOSS
+    return(score);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+int FonctionJeuInf(int score,int i,int j,int y0,int y1,int y2,int y3,int y4,int y5,int y6,int y7,int y8,int y9,int tabYEnemi[100],int tabXEnemi[30],int t,int f,int tabMort[10],int tabTempMort[10],int vie,int tir,int k,int tabAlea[10],int plus,int munition,int tabStop[10],int xj,int yj,char mouvement)
+/** Cette fonction est le mode de jeu 'INFINI', même caractéristique que mode aventure sauf qu'il n'y a pas de boss
+    et la difficulté évolue dans le temp
+**/
+{
+    /// Ce mode de jeu est l'identique du mode aventure sauf qu'il n'y a pas de boss
+
+    int waw=0,vitesse=80,multiple;
+    /// DEBUT INITIALISATION TABLEAU
+    for (i=0; i<100; i++) // Initialisation des coordonnée en Y
+    {
+        tabYEnemi[i]=i;
+    }
+    for (i=0; i<30; i++) // Initialisation des coordonée en X de façon aléatoire et qui change à chaque tour de la boucle while
+    {
+        tabXEnemi[i]=rand()%55+3;
+    }
+    for (i=0; i<8; i++)
+    {
+        tabMort[i]=0;
+        tabTempMort[i]=0;
+    }
+    /// INITIALISATION TABLEAU
+
+
+    /// DEBUT AFFICHAGE BORDURE
+    for (i=0; i<47; i++)
+    {
+        gotoxy(0,i);
+        printf("*");
+        gotoxy(65,i);
+        printf("*");
+    }
+    for (j=0; j<=65; j++)
+    {
+        gotoxy(j,47);
+        printf("-");
+    }
+    /// FIN AFFICHAGE BORDURE
+
+
+    while (vie>0) /// BOUCLE DU JEU
+    {
+        ///VARIATEUR DE VITESSE ################################################ ( Nouveau du mode infini)
+        multiple=t%100;
+        if ( multiple==0)
+        {
+            vitesse=vitesse-1;
+        }
+        /// VARIATEUR DE VITESSE ################################################
+
+
+/// DEBUT COLLISION VAISSEAU PIEGE
+        if ((xj>=tabXEnemi[9]-2) && (xj<=tabXEnemi[9]+10)&&(tabYEnemi[y9+1]==yj))
+        {
+            gotoxy(tabXEnemi[9],tabYEnemi[y9+1]);
+            printf("         ");
+            tabStop[1]=0;
+            tabStop[4]=1;
+            y9=0;
+            tabXEnemi[9]=rand()%55+3;
+            vie=vie-1;
+        }
+/// FIN COLLISION VAISSEAU PIEGE
+
+        t=t+1;// variable du temp du jeu
+
+        /// DEBUT MOUVEMENT JOUEUR
+        if(kbhit() == 1 && tabStop[4] !=1)
+        {
+            mouvement = getch();
+            if(mouvement=='q') xj=xj-2;
+            if(mouvement=='d') xj=xj+2;
+            if(mouvement=='z') yj=yj-1;
+            if(mouvement=='s') yj=yj+1;
+            if(mouvement=='a') tir=1;
+            if(mouvement==27) return(0);
+        }
+        /// DEBUT MALUS VAISSEAU PIEGE
+        if (tabStop[4]==1)
+        {
+            tabTempMort[8]=tabTempMort[8]+1;
+            if (tabTempMort[8] > 50)
+            {
+                tabStop[4]=0;
+                tabTempMort[8]=0;
+            }
+        }
+        /// FIN MALUS VAISSEAU PIEGE
+
+        /// DEBUT LIMITE MOUVEMENT JOUEUR
+        if (xj>60)
+        {
+            xj=xj-2;
+        }
+        else if (xj<3)
+        {
+            xj=xj+2;
+        }
+        else if (yj>45)
+        {
+            yj=yj-1;
+        }
+        else if(yj<10)
+        {
+            yj=yj+1;
+        }
+        /// FIN LIMITE MOUVEMENT JOUEUR
+
+        /// DEBUT AFFICHAGE VAISSEAU JOUEUR
+        gotoxy( xj, yj);
+        printf("(*)");
+        Sleep(vitesse); // Sleep qui fait varier la vitesse du jeu et donc la difficulté avec
+        gotoxy( xj, yj);
+        printf("    ");
+        /// FIN AFFICHAGE VAISSEAU JOUEUR
+
+        /// DEBUT MOUVEMENT JOUEUR
+
+
+        /// DEBUT COLLISION
+        if ((xj>=tabXEnemi[0]-2) && (xj<=tabXEnemi[0]+4)&&(tabYEnemi[y0+1]==yj))
+        {
+            gotoxy(tabXEnemi[0],tabYEnemi[y0+1]);
+            printf("         ");
+            tabMort[0]=1;
+            y0=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[1]-2) && (xj<=tabXEnemi[1]+4)&&(tabYEnemi[y1+1]==yj))
+        {
+            gotoxy(tabXEnemi[1],tabYEnemi[y1+1]);
+            printf("         ");
+            tabMort[1]=1;
+            y1=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[2]-2) && (xj<=tabXEnemi[2]+4)&&(tabYEnemi[y2+1]==yj))
+        {
+            gotoxy(tabXEnemi[2],tabYEnemi[y2+1]);
+            printf("         ");
+            tabMort[2]=1;
+            y2=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[3]-2) && (xj<=tabXEnemi[3]+4)&&(tabYEnemi[y3+1]==yj))
+        {
+            gotoxy(tabXEnemi[3],tabYEnemi[y3+1]);
+            printf("         ");
+            tabMort[3]=1;
+            y3=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[4]-2) && (xj<=tabXEnemi[4]+4)&&(tabYEnemi[y4+1]==yj))
+        {
+            gotoxy(tabXEnemi[4],tabYEnemi[y4+1]);
+            printf("         ");
+            tabMort[4]=1;
+            y4=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[5]-2) && (xj<=tabXEnemi[5]+4)&&(tabYEnemi[y5+1]==yj))
+        {
+            gotoxy(tabXEnemi[5],tabYEnemi[y5+1]);
+            printf("         ");
+            tabMort[5]=1;
+            y5=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[6]-2) && (xj<=tabXEnemi[6]+4)&&(tabYEnemi[y6+1]==yj))
+        {
+            gotoxy(tabXEnemi[6],tabYEnemi[y6+1]);
+            printf("         ");
+            tabMort[6]=1;
+            y6=0;
+            vie=vie-1;
+            score=score-10;
+        }
+        else if ((xj>=tabXEnemi[7]-2) && (xj<=tabXEnemi[7]+4)&&(tabYEnemi[y7+1]==yj))
+        {
+            gotoxy(tabXEnemi[7],tabYEnemi[y7+1]);
+            printf("         ");
+            tabMort[7]=1;
+            y7=0;
+            vie=vie-10;
+        }
+        else if ((xj>=tabXEnemi[8]-2) && (xj<=tabXEnemi[8]+4)&&(tabYEnemi[y8+1]==yj))
+        {
+            gotoxy(tabXEnemi[8],tabYEnemi[y8+1]);
+            printf("           ");
+            tabStop[0]=0;
+            y8=0;
+            tabXEnemi[8]=rand()%55+3;
+            vie=vie+1;
+            if (vie > 5)
+            {
+                vie=vie-1;
+            }
+            munition=munition+5;
+            score=score+20;
+        }
+        /// FIN COLLISION
+
+
+        /// DEBUT LASERCOLLISION
+        if  ((xj>=tabXEnemi[0]-1) && (xj<=tabXEnemi[0]+3)&& (tir==1)&&(tabYEnemi[y0]>4)&&(tabYEnemi[y0]<=yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[0],tabYEnemi[y0+1]);
+            Sleep(100);
+            printf("         ");
+            y0=0;
+            tabMort[0]=1;
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[1]-1) && (xj<=tabXEnemi[1]+3) && (tir==1)&& (tabYEnemi[y1]>4) && (tabYEnemi[y1]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[1],tabYEnemi[y1+1]);
+            printf("         ");
+            y1=0;
+            tabMort[1]=1;
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[2]-1) && (xj<=tabXEnemi[2]+3) && (tir==1) && (tabYEnemi[y2]>4) &&(tabYEnemi[y2]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[2],tabYEnemi[y2+1]);
+            printf("         ");
+            y2=0;
+            tabMort[2]=1;
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[3]-1) && (xj<=tabXEnemi[3]+3)&& (tir==1) && (tabYEnemi[y3]>4) &&(tabYEnemi[y3]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[3],tabYEnemi[y3+1]);
+            printf("         ");
+            y3=0;
+            tabMort[3]=1;
+            score=score+30;
+        }
+        else if  ((xj>=tabXEnemi[4]-1) && (xj<=tabXEnemi[4]+3) && (tir==1) && (tabYEnemi[y4]>4) && (tabYEnemi[y4]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[4],tabYEnemi[y4+1]);
+            printf("         ");
+            y4=0;
+            tabMort[4]=1;
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[5]-1) && (xj<=tabXEnemi[5]+3) && (tir==1) && (tabYEnemi[y5]>4) && (tabYEnemi[y5]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[5],tabYEnemi[y5+1]);
+            printf("         ");
+            y5=0;
+            tabMort[5]=1;
+            score=score+30;
+        }
+        else if ((xj>=tabXEnemi[6]-1) && (xj<=tabXEnemi[6]+3) && (tir==1) && (tabYEnemi[y6]>4) && (tabYEnemi[y6]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[6],tabYEnemi[y6+1]);
+            printf("         ");
+            y6=0;
+            tabMort[6]=1;
+            score=score+30;
+        }
+        else if  ((xj>=tabXEnemi[7]-1) && (xj<=tabXEnemi[7]+3) && (tir==1) && (tabYEnemi[y7]>4) && (tabYEnemi[y7]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[7],tabYEnemi[y7+1]);
+            printf("         ");
+            y7=0;
+            tabMort[7]=1;
+            score=score+30;
+        }
+        else if  ((xj>=tabXEnemi[9]-1) && (xj<=tabXEnemi[9]+3) && (tir==1) && (tabYEnemi[y9]>4) && (tabYEnemi[y9]<yj) && (munition>0))
+        {
+            gotoxy(tabXEnemi[9],tabYEnemi[y9+1]);
+            printf("         ");
+            y9=0;
+            tabStop[1]=0;
+            tabXEnemi[9]=rand()%55+3;
+            score=score+30;
+        }
+/// FIN LASERCOLLISION
+
+
+        /// DEBUT TIR JOUEUR
+        if ((tir==1) && (munition>0))
+        {
+            while (yj-k >5)
+            {
+                gotoxy( xj+1, yj-k);
+                printf("|");
+                k=k+1;
+            }
+            tir=0;
+            k=1;
+            Sleep(50);
+            while (yj-k >5)
+            {
+                gotoxy( xj+1, yj-k);
+                printf(" ");
+                k=k+1;
+            }
+            k=1;
+            munition=munition-1;
+        }
+        ///FIN TIR JOUEUR
+
+
+/// DEBUT MORT ENEMI
+        if (tabMort[0]==1)
+        {
+            tabXEnemi[0]=rand()%55+3;
+            tabTempMort[0]=tabTempMort[0]+1;
+            if (tabTempMort[0]>40)
+            {
+                tabMort[0]=0;
+                tabTempMort[0]=0;
+            }
+        }
+        else if (tabMort[1]==1)
+        {
+            tabXEnemi[1]=rand()%55+3;
+            tabTempMort[1]=tabTempMort[1]+1;
+            if (tabTempMort[1]>40)
+            {
+                tabMort[1]=0;
+                tabTempMort[1]=0;
+            }
+        }
+        else if (tabMort[2]==1)
+        {
+            tabXEnemi[2]=rand()%55+3;
+            tabTempMort[2]=tabTempMort[2]+1;
+            if (tabTempMort[2]>40)
+            {
+                tabMort[2]=0;
+                tabTempMort[2]=0;
+            }
+        }
+        else if (tabMort[3]==1)
+        {
+            tabXEnemi[3]=rand()%55+3;
+            tabTempMort[3]=tabTempMort[3]+1;
+            if (tabTempMort[3]>40)
+            {
+                tabMort[3]=0;
+                tabTempMort[3]=0;
+            }
+        }
+        else if (tabMort[4]==1)
+        {
+            tabXEnemi[4]=rand()%55+3;
+            tabTempMort[4]=tabTempMort[4]+1;
+            if (tabTempMort[4]>40)
+            {
+                tabMort[4]=0;
+                tabTempMort[4]=0;
+            }
+        }
+        else if (tabMort[5]==1)
+        {
+            tabXEnemi[5]=rand()%55+3;
+            tabTempMort[5]=tabTempMort[5]+1;
+            if (tabTempMort[5]>40)
+            {
+                tabMort[5]=0;
+                tabTempMort[5]=0;
+            }
+        }
+        else if (tabMort[6]==1)
+        {
+            tabXEnemi[6]=rand()%55+3;
+            tabTempMort[6]=tabTempMort[6]+1;
+            if (tabTempMort[6]>40)
+            {
+                tabMort[6]=0;
+                tabTempMort[6]=0;
+            }
+        }
+        else if (tabMort[7]==1)
+        {
+            tabXEnemi[7]=rand()%55+3;
+            tabTempMort[7]=tabTempMort[7]+1;
+            if (tabTempMort[7]>40)
+            {
+                tabMort[7]=0;
+                tabTempMort[7]=0;
+            }
+        }
+/// FIN MORT ENEMI
+
+
+/// AFFICHAGE STATS
+        gotoxy(80,30);
+        printf("Vie:%d  ",vie);
+        gotoxy(80,31);
+        printf("Ammo:%d  ",munition);
+        gotoxy(80,32);
+        printf("Score:%d  ",score);
+        gotoxy(80,20);
+        printf("Vaisseau enemi : ' -<0>- '");
+        gotoxy(80,21);
+        printf("Vaisseau piege : ' -<X>- '");
+        gotoxy(80,22);
+        printf("Vitamine :       '  <+>  '");
+/// AFFICHAGE STATS
+
+
+/// DEBUT AFFICHAGE ENEMI
+        if (tabMort[0]!=1)
+        {
+            y0=y0+1;
+            gotoxy(tabXEnemi[0],tabYEnemi[y0]);
+            printf("     ");
+            gotoxy(tabXEnemi[0],tabYEnemi[y0+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y0]>45)
+            {
+                y0=1;
+                tabXEnemi[0]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>70 && tabMort[1]!=1)
+        {
+            y1=y1+1;
+            gotoxy(tabXEnemi[1],tabYEnemi[y1]);
+            printf("     ");
+            gotoxy(tabXEnemi[1],tabYEnemi[y1+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y1]>45)
+            {
+                y1=0;
+                tabXEnemi[1]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>150 && tabMort[2]!=1)
+        {
+            y2=y2+1;
+            gotoxy(tabXEnemi[2],tabYEnemi[y2]);
+            printf("     ");
+            gotoxy(tabXEnemi[2],tabYEnemi[y2+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y2]>45)
+            {
+                y2=0;
+                tabXEnemi[2]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>250 && tabMort[3]!=1)
+        {
+            y3=y3+1;
+            gotoxy(tabXEnemi[3],tabYEnemi[y3]);
+            printf("     ");
+            gotoxy(tabXEnemi[3],tabYEnemi[y3+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y3]>45)
+            {
+                y3=0;
+                tabXEnemi[3]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>380 && tabMort[4]!=1)
+        {
+            y4=y4+1;
+            gotoxy(tabXEnemi[4],tabYEnemi[y4]);
+            printf("     ");
+            gotoxy(tabXEnemi[4],tabYEnemi[y4+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y4]>45)
+            {
+                y4=0;
+                tabXEnemi[4]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>440 && tabMort[5]!=1)
+        {
+            y5=y5+1;
+            gotoxy(tabXEnemi[5],tabYEnemi[y5]);
+            printf("     ");
+            gotoxy(tabXEnemi[5],tabYEnemi[y5+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y5]>45)
+            {
+                y5=0;
+                tabXEnemi[5]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>580 && tabMort[6]!=1)
+        {
+            y6=y6+1;
+            gotoxy(tabXEnemi[6],tabYEnemi[y6]);
+            printf("     ");
+            gotoxy(tabXEnemi[6],tabYEnemi[y6+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y6]>45)
+            {
+                y6=0;
+                tabXEnemi[6]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        if (t>780 && tabMort[7]!=1)
+        {
+            y7=y7+1;
+            gotoxy(tabXEnemi[7],tabYEnemi[y7]);
+            printf("     ");
+            gotoxy(tabXEnemi[7],tabYEnemi[y7+1]);
+            printf("-<0>-");
+            if (tabYEnemi[y7]>45)
+            {
+                y7=0;
+                tabXEnemi[7]=rand()%55+3;
+                score=score+1;
+                gotoxy(0,47);
+                printf("------------------------------------------------------------------");
+            }
+        }
+        /// FIN AFFICHAGE ENEMI
+
+
+
+
+        /// Apparition vitamine
+        if (tabStop[0]!=1)
+        {
+            tabAlea[0]=rand()%50;
+        }
+        if (tabAlea[0] ==3)
+        {
+            tabStop[0]=1;
+            y8=y8+1;
+            gotoxy(tabXEnemi[8],tabYEnemi[y8]);
+            printf("   ");
+            gotoxy(tabXEnemi[8],tabYEnemi[y8+1]);
+            printf("<+>");
+        }
+        if (tabYEnemi[y8]>45)
+        {
+            y8=0;
+            tabXEnemi[8]=rand()%55+3;
+            tabStop[0]=0;
+            gotoxy(0,47);
+            printf("------------------------------------------------------------------");
+        }
+        /// FIN APPARITION VITAMINE
+
+
+
+        ///DEBUT APPARITION ENEMI PIEGE
+        if (tabStop[1]!=1)
+        {
+            tabAlea[1]=rand()%100;
+        }
+        if (tabAlea[1] ==3)
+        {
+            tabStop[1]=1;
+            y9=y9+1;
+            gotoxy(tabXEnemi[9],tabYEnemi[y9]);
+            printf("     ");
+            gotoxy(tabXEnemi[9],tabYEnemi[y9+1]);
+            printf("-<X>-");
+        }
+        if (tabYEnemi[y9]>45)
+        {
+            y9=0;
+            tabXEnemi[9]=rand()%55+3;
+            tabStop[1]=0;
+            gotoxy(0,47);
+            printf("------------------------------------------------------------------");
+        }
+        /// FIN APPARITION ENEMI PIEGE
+    }
+waw=0;
+    /// GAME OVER
+    system("cls");
+    gotoxy(80,22);
+    printf("\n\t\t\t\t\t\t\t\t          .d8888b       8888b.    '888k      y888'   8888888               ");
+    gotoxy(80,23);
+    printf("\n\t\t\t\t\t\t\t\t         88k               '88b   888 8k    y8 888   888                   ");
+    gotoxy(80,24);
+    printf("\n\t\t\t\t\t\t\t\t         88b    888k  .d8888888   888  88bd88  888   88888                 ");
+    gotoxy(80,25);
+    printf("\n\t\t\t\t\t\t\t\t         88k    88    888   888   888    YY    888   888                   ");
+    gotoxy(80,26);
+    printf("\n\t\t\t\t\t\t\t\t          '88888p'    'Y8888888   888          888   8888888               ");
+    gotoxy(80,28);
+    printf("\n\t\t\t\t\t\t\t\t               .d8888b.     888  888  8888888  8888888b.        ");
+    gotoxy(80,29);
+    printf("\n\t\t\t\t\t\t\t\t               88k   88k    888  888  888      888  'Y88b       ");
+    gotoxy(80,30);
+    printf("\n\t\t\t\t\t\t\t\t               88k   88k    Y88  88Y  88888    888  .d88p       ");
+    gotoxy(80,31);
+    printf("\n\t\t\t\t\t\t\t\t               88k   88k     Y8bd8Y   888      888888Y'         ");
+    gotoxy(80,32);
+    printf("\n\t\t\t\t\t\t\t\t               'd8888b'       Y88Y    8888888  888   8888.      ");
+    gotoxy(80,33);
+    printf("\n\t\t\t\t\t\t\t\t_________________________________________________________________________   ");
+    while(waw!=7)
+    {
+        system ("color 04");
+        Sleep(80);
+        system ("color 0F");
+        Sleep(80);
+        waw=waw+1;
+    }
+    system("cls");
+    printf("\n\n\t\t Votre score est de %d",score);
+    return(score);
+}
+
+
+
+
+
+
+
+
+
+void Animation()
+/** Fonction de l'animation du début
+**/
+{
+    int waw, intro=0;
+    //Debut annimation
+
+
+    printf("\n\t\t\t\t\t\t\t\t        / \\\         8888888b.    .d8888b.    .d8888b    .d8888b         ");
+    printf("\n\t\t\t\t\t\t\t\t       / | \\\        888  'Y88b   88k   88k   88k        88k             ");
+    printf("\n\t\t\t\t\t\t\t\t      /  |  \\\       888.d88p     88k   88k   'Y8888b.   'Y8888b.        ");
+    printf("\n\t\t\t\t\t\t\t\t     /   *   \\\      888  'Y88b   88k   88k        X88        X88        ");
+    printf("\n\t\t\t\t\t\t\t\t    /_________\\\     88888888p'   'd8888b'     88888p'    88888p'        ");
+    while(waw!=7)
+    {
+        system ("color 04");
+        Sleep(80);
+        system ("color 0F");
+        Sleep(80);
+        waw=waw+1;
+    }
+
+
+    system("cls");
+    system ("color 04");
+    printf("\n\t\t\t\t\t\t\t\t     ---     "
+           "\n\t\t\t\t\t\t\t\t    (O O)    "
+           "\n\t\t\t\t\t\t\t\t     |=|     "
+           "\n\t\t\t\t\t\t\t\t    .-|-.    "
+           "\n\t\t\t\t\t\t\t\t   //| |\\   "
+           "\n\t\t\t\t\t\t\t\t _// | | \\_ "
+           "\n\t\t\t\t\t\t\t\t=./ {.-.} \.="
+           "\n\t\t\t\t\t\t\t\t    || ||    "
+           "\n\t\t\t\t\t\t\t\t    || ||    "
+           "\n\t\t\t\t\t\t\t\t  __|| ||__  "
+           "\n\t\t\t\t\t\t\t\t '---' '---' ");
+    Sleep(300);
+    printf("H");
+    Sleep(150);
+    printf("A");
+    Sleep(150);
+    printf(" ");
+    printf("H");
+    Sleep(150);
+    printf("A");
+    Sleep(150);
+    printf(" ");
+    printf("J");
+    Sleep(150);
+    printf("E");
+    Sleep(150);
+    printf("  vais");
+    Sleep(150);
+    printf("  vous");
+    Sleep(150);
+    printf("  tuez");
+    Sleep(500);
+    system("cls");
+    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t-                              (*)");
+    Sleep(150);
+    system("cls");
+    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t    -                          (*)");
+    Sleep(150);
+    system("cls");
+    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t        -                      (*)");
+    Sleep(150);
+    system("cls");
+    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t             -                 (*)");
+    Sleep(150);
+    system("cls");
+    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t                 -             (*)");
+    Sleep(150);
+    system("cls");
+    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t                      -        (*)");
+    Sleep(150);
+    system("cls");
+    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t                            -  (*)");
+    Sleep(150);
+    system("cls");
+    color(15,0);
+    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t                               (*)");
+    Sleep(150);
+    system("cls");
+    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t                             *  * ");
+    printf("\n\t\t\t\t\t\t\t\t                           *  *  *");
+    printf("\n\t\t\t\t\t\t\t\t                             *  * ");
+    while(waw!=14)
+    {
+        system ("color 04");
+        Sleep(80);
+        system ("color 0F");
+        Sleep(80);
+        waw=waw+1;
+    }
+    Sleep(50);
+    system("cls");
+    printf("\n\t\t\t\t\t\t\t\t      .d8888b   8888888b.     8888b.      .d888888    8888888               ");
+    printf("\n\t\t\t\t\t\t\t\t      88k       888  'Y88b       '88b    .d8888       888                   ");
+    printf("\n\t\t\t\t\t\t\t\t      'Y8888b.  888  .d88p  .d8888888    888          88888                 ");
+    printf("\n\t\t\t\t\t\t\t\t           X88  8888888'    888   888    .d8888       888                   ");
+    printf("\n\t\t\t\t\t\t\t\t       88888p'  888         'Y8888888     .d888888    8888888               ");
+    printf("\n ");
+    printf("\n\t\t\t\t\t\t\t\t 888  88888b.    888  888    8888b.   8888888b.   8888888  8888888b.        ");
+    printf("\n\t\t\t\t\t\t\t\t 888  888  '88b  888  888       '88b  888    88b  888      888  'Y88b       ");
+    printf("\n\t\t\t\t\t\t\t\t 888  888   888  Y88  88Y  .d8888888  888    88b  88888    888  .d88p       ");
+    printf("\n\t\t\t\t\t\t\t\t 888  888   888   Y8bd8Y   888   888  888    88b  888      888888Y'         ");
+    printf("\n\t\t\t\t\t\t\t\t 888  888   888    Y88Y    'Y8888888  8888888b'   8888888  888   8888.      ");
+    printf("\n\t\t\t\t\t\t\t\t_________________________________________________________________________   ");
+
+    while(intro!=10)
+    {
+
+        system ("color 04");
+        Sleep(100);
+        system ("color 05");
+        Sleep(100);
+        system ("color 0A");
+        Sleep(100);
+
+        intro=intro+1;
+
+    }
+    color(5,0);
+    printf("\nappuyer sur entrer pour continuer... ");
+    getchar();
+    system("cls");
+}
+
+
+
+
+
+int MenuJeu(int tabscore[10],int tabDifficulte[1],char skin[3],char tabname[50],char tabname1[15],char tabname2[15],char tabname3[15],char tabname4[15],char tabname5[15],char ca[15])
+/** Fonction du menu du jeu.
+**/
+{
+    char touche;
+    int dir,i, x=11, intro=0, sortie=0, waw=0, fait=0, passage=0,Modejeu=1;
+
+
+
+
+
+
+
+    //debut menu principal
+    do
+    {
+
+        printf("\n\t\t\t\tZ et S pour surfer dans le menu et A pour valider\n\n");
+        printf("\n\t\t\t\tMenu Principale\n");
+        printf("\n\t\t\t\t-> JOUER"
+               "\n\t\t\t\tHISTORIQUE DES SCORE"
+               "\n\t\t\t\tQUITTER\n");
+        touche = getch();
+        system("cls");
+
+        //debut sous menu
+        if(touche=='a')
+        {
+            do
+            {
+                printf("\n\t\t\t\tMenu Jouer\n"
+                       "\n\t\t\t\t-> JOUER"
+                       "\n\t\t\t\tPARAMETRE"
+                       "\n\t\t\t\tMODE DE JEU"
+                       "\n\t\t\t\tCHOIX DU SKIN"
+                       "\n\t\t\t\tQUITTER");
+                touche = getch();
+                system("cls");
+
+                //debut jeu
+                if(touche=='a')
+                {
+                    //debut entrer du pseudo
+
+                    printf("\n\t\t\t\tentrer un pseudo (15 caractere max): ");
+
+                    for(i=0; i<16; i++)
+                    {
+                        if(passage==0)
+                        {
+                            tabname1[i]=getch();
+                            printf("%c",tabname1[i]);  //chaque tableau pour un seul pseudo et affiche au fur et a mesure que l'on tape
+                        }
+                        if(passage==1)
+                        {
+                            tabname2[i]=getch();
+                            printf("%c",tabname2[i]);
+                        }
+                        if(passage==2)
+                        {
+                            tabname3[i]=getch();
+                            printf("%c",tabname3[i]);
+                        }
+                        if(passage==3)
+                        {
+                            tabname4[i]=getch();
+                            printf("%c",tabname4[i]);
+                        }
+                        if(passage==4)
+                        {
+                            tabname5[i]=getch();
+                            printf("%c",tabname5[i]);
+
+                        }
+                    }
+
+
+
+                    do
+                    {
+                        printf("\n\t\t\t\tvotre pseudo est: ");
+                        for(i=0; i<16; i++)
+                        {
+                            if(passage==0)
+                            {
+
+                                printf("%c",tabname1[i]);
+                            }
+                            if(passage==1)
+                            {
+
+                                printf("%c",tabname2[i]);
+                            }
+                            if(passage==2)
+                            {
+
+                                printf("%c",tabname3[i]);
+                            }
+                            if(passage==3)
+                            {
+
+                                printf("%c",tabname4[i]);
+                            }
+                            if(passage==4)
+                            {
+
+                                printf("%c",tabname5[i]);
+
+                            }
+                        }
+
+
+                        printf("\n\t\t\t\tvoulez vous changer de pseudo? le score realiser sera enregistrer a ce nom...\n");
+
+                        printf("\n\t\t\t\t-> oui"
+                               "\n\t\t\t\tnon");
+                        touche = getch();
+                        system("cls");
+
+
+
+                        if(touche=='a')
+                        {
+                            printf("\n\t\t\t\tEntrer un pseudo:  ");
+
+                            for(i=0; i<16; i++)
+                            {
+                                if(passage==0)
+                                {
+                                    tabname1[i]=getch();
+                                    printf("%c",tabname1[i]);
+                                }
+                                if(passage==1)
+                                {
+                                    tabname2[i]=getch();
+                                    printf("%c",tabname2[i]);
+                                }
+                                if(passage==2)
+                                {
+                                    tabname3[i]=getch();
+                                    printf("%c",tabname3[i]);
+                                }
+                                if(passage==3)
+                                {
+                                    tabname4[i]=getch();
+                                    printf("%c",tabname4[i]);
+                                }
+                                if(passage==4)
+                                {
+                                    tabname5[i]=getch();
+                                    printf("%c",tabname5[i]);
+
+                                }
+                            }
+
+                            printf("\n\t\t\t\tapres changement votre pseudo est: ");
+                            for(i=0; i<16; i++)
+                            {
+                                if(passage==0)
+                                {
+
+                                    printf("%c",tabname1[i]);
+                                }
+                                if(passage==1)
+                                {
+
+                                    printf("%c",tabname2[i]);
+                                }
+                                if(passage==2)
+                                {
+
+                                    printf("%c",tabname3[i]);
+                                }
+                                if(passage==3)
+                                {
+
+                                    printf("%c",tabname4[i]);
+                                }
+                                if(passage==4)
+                                {
+
+                                    printf("%c",tabname5[i]);
+
+                                }
+                            }
+
+
+                        }
+
+                        if(touche=='s')
+                        {
+                            printf("\n\t\t\t\tvotre pseudo est: ");
+                            for(i=0; i<16; i++)
+                            {
+                                if(passage==0)
+                                {
+
+                                    printf("%c",tabname1[i]);
+                                }
+                                if(passage==1)
+                                {
+
+                                    printf("%c",tabname2[i]);
+                                }
+                                if(passage==2)
+                                {
+
+                                    printf("%c",tabname3[i]);
+                                }
+                                if(passage==3)
+                                {
+
+                                    printf("%c",tabname4[i]);
+                                }
+                                if(passage==4)
+                                {
+
+                                    printf("%c",tabname5[i]);
+
+                                }
+                            }
+                            printf("\n\t\t\t\tvoulez vous changer de pseudo? le score realiser sera enregistrer a ce nom...\n");
+                            printf("\n\t\t\t\toui"
+                                   "\n\t\t\t\t-> non");
+                            touche = getch();
+                            system("cls");
+                        }
+                        //fin entrer pseudo
+
+
+
+
+                    }
+                    while(touche!='a');    //debut choix des difficulters
+                    do
+                    {
+                        printf("\n\t\t\t\tChoix de la difficulter:\n");
+                        printf("\n\t\t\t\t-> Enfant"
+                               "\n\t\t\t\tEasy"
+                               "\n\t\t\t\tMoyen"
+                               "\n\t\t\t\tDifficile"
+                               "\n\t\t\t\tCauchemar");
+                        touche = getch();
+                        system("cls");
+                        if(touche=='a')
+                        {
+                            tabDifficulte[0]=1;
+                        }
+                        if(touche=='s')
+                        {
+                            printf("\n\t\t\t\tChoix de la difficulter:\n");
+                            printf("\n\t\t\t\tEnfant"
+                                   "\n\t\t\t\t-> Easy"
+                                   "\n\t\t\t\tMoyen"
+                                   "\n\t\t\t\tDifficile"
+                                   "\n\t\t\t\tCauchemar");
+                            touche = getch();
+                            system("cls");
+                            if(touche=='a')
+                            {
+                                tabDifficulte[0]=2;
+                            }
+                        }
+                        if(touche=='s')
+                        {
+                            printf("\n\t\t\t\tChoix de la difficulter:\n");
+                            printf("\n\t\t\t\tEnfant"
+                                   "\n\t\t\t\tEasy"
+                                   "\n\t\t\t\t-> Moyen"
+                                   "\n\t\t\t\tDifficile"
+                                   "\n\t\t\t\tCauchemar");
+                            touche = getch();
+                            system("cls");
+                            if(touche=='a')
+                            {
+                                tabDifficulte[0]=3;
+                            }
+                        }
+                        if(touche=='s')
+                        {
+                            printf("\n\t\t\t\tChoix de la difficulter:\n");
+                            printf("\n\t\t\t\tEnfant"
+                                   "\n\t\t\t\tEasy"
+                                   "\n\t\t\t\tMoyen"
+                                   "\n\t\t\t\t-> Difficile"
+                                   "\n\t\t\t\tCauchemar");
+                            touche = getch();
+                            system("cls");
+                            if(touche=='a')
+                            {
+                                tabDifficulte[0]=4;
+                            }
+                        }
+                        if(touche=='s')
+                        {
+                            printf("\n\t\t\t\tChoix de la difficulter:\n");
+                            printf("\n\t\t\t\tEnfant"
+                                   "\n\t\t\t\tEasy"
+                                   "\n\t\t\t\tMoyen"
+                                   "\n\t\t\t\tDifficile"
+                                   "\n\t\t\t\t-> Cauchemar");
+                            touche = getch();
+                            system("cls");
+                            if(touche=='a')
+                            {
+                                tabDifficulte[0]=5;
+                            }
+                        }
+
+
+                    }
+                    while(touche!='a'); //fin choix difficulter
+
+
+
+
+
+
+
+
+                    return(Modejeu); //jeu normalement ici
+
+
+
+
+
+
+                    passage=passage+1;
+                    if(passage==5)
+                    {
+                        passage=0;
+                    }
+
+
+
+
+
+
+
+
+                }
+
+
+
+
+
+
+                if(touche=='s')//debut parametre
+                {
+                    printf("\n\t\t\t\tMenu Jouer\n"
+                           "\n\t\t\t\tJOUER"
+                           "\n\t\t\t\t-> PARAMETRE"
+                           "\n\t\t\t\tMODE DE JEU"
+                           "\n\t\t\t\tCHOIX DU SKIN"
+                           "\n\t\t\t\tQUITTER");
+                    touche = getch();
+                    system("cls");
+
+                    if(touche=='a')
+                    {
+                        do
+                        {
+                            printf("\n\t\t\t\tChoix des reglages");
+                            printf("\n\t\t\t\t-> Choix azerty"
+                                   "\n\t\t\t\tChoix qwerty");
+                            touche = getch();
+                            system("cls");
+                            if(touche=='s')
+                            {
+                                printf("\n\t\t\t\tChoix des reglages");
+                                printf("\n\t\t\t\tChoix azerty"
+                                       "\n\t\t\t\t-> Choix qwerty");
+                            }
+
+
+
+
+                        }
+                        while(touche=='a');// fin parametre
+
+
+                    }
+
+
+                }
+
+                if(touche=='s')// debut choix du mode
+                {
+                    printf("\n\t\t\t\tMenu Jouer\n"
+                           "\n\t\t\t\tJOUER"
+                           "\n\t\t\t\tPARAMETRE"
+                           "\n\t\t\t\t-> MODE DE JEU"
+                           "\n\t\t\t\tCHOIX DU SKIN"
+                           "\n\t\t\t\tQUITTER");
+                    touche = getch();
+                    system("cls");
+
+
+                    if(touche=='a')
+                    {
+                        do
+                        {
+                            printf("choisie ton mode de jeu");
+                            printf("\n\t\t\t\t-> Mode infinie(par defaut)"
+                                   "\n\t\t\t\tMode aventure");
+
+                            touche = getch();
+                            system("cls");
+                            if(touche=='a')
+                            {
+                                Modejeu=1;
+                                printf("\n\t\t\t\tMode de jeu choisie: Mode infinie");
+                            }
+                            if(touche=='s')
+                            {
+                                printf("choisie ton mode de jeu");
+                                printf("\n\t\t\t\tMode infinie(par defaut)"
+                                       "\n\t\t\t\t-> Mode aventure");
+                                touche = getch();
+                                system("cls");
+                                if(touche=='a')
+                                {
+                                    Modejeu=2;
+                                    printf("\n\t\t\t\tMode de jeu choisie: Mode aventure");
+                                }
+                            }
+
+                        }
+                        while(touche!='a');//fin du choix du mode
+                        Sleep(600);
+
+
+                    }
+
+                }
+
+                if(touche=='s') //debut choix du skin
+                {
+                    printf("\n\t\t\t\tMenu Jouer\n"
+                           "\n\t\t\t\tJOUER"
+                           "\n\t\t\t\tPARAMETRE"
+                           "\n\t\t\t\tMODE DE JEU"
+                           "\n\t\t\t\t-> CHOIX DU SKIN"
+                           "\n\t\t\t\tQUITTER");
+                    touche = getch();
+                    system("cls");
+
+
+                    if(touche=='a')
+                    {
+                        do
+                        {
+
+                            printf("\n\t\t\t\tChoix du skin:\n "
+                                   "\n\t\t\t\t-> skin par defaut- (*)"
+                                   "\n\t\t\t\tImperial TIE-    |-| "
+                                   "\n\t\t\t\tSupersonic-      -^-  "
+                                   "\n\t\t\t\tAmiral TIE-      <->     ");
+                            touche = getch();
+                            system("cls");
+                            if(touche=='a')
+                            {
+                                skin[0]='(';
+                                skin[1]='*';
+                                skin[2]=')';
+                            }
+
+
+
+                            if(touche=='s')
+                            {
+                                printf("\n\t\t\t\tchoix du skin:\n "
+                                       "\n\t\t\t\tskin par defaut- (*)"
+                                       "\n\t\t\t\t-> Imperial TIE-    |-| "
+                                       "\n\t\t\t\tSupersonic-      -^-  "
+                                       "\n\t\t\t\tAmiral TIE-      <->     ");
+                                touche = getch();
+                                system("cls");
+                                if(touche=='a')
+                                {
+                                    skin[0]='|';
+                                    skin[1]='-';
+                                    skin[2]='|';
+                                }
+
+
+                            }
+                            if(touche=='s')
+                            {
+                                printf("\n\t\t\t\tchoix du skin:\n "
+                                       "\n\t\t\t\tskin par defaut- (*)"
+                                       "\n\t\t\t\tImperial TIE-    |-| "
+                                       "\n\t\t\t\t-> Supersonic-      -^-  "
+                                       "\n\t\t\t\tAmiral TIE-      <->     ");
+                                touche = getch();
+                                system("cls");
+                                if(touche=='a')
+                                {
+                                    skin[0]='-';
+                                    skin[1]='^';
+                                    skin[2]='-';
+                                }
+
+
+                            }
+                            if(touche=='s')
+                            {
+                                printf("\n\t\t\t\tchoix du skin:\n "
+                                       "\n\t\t\t\tskin par defaut- (*)"
+                                       "\n\t\t\t\tImperial TIE-    |-| "
+                                       "\n\t\t\t\tSupersonic-      -^-  "
+                                       "\n\t\t\t\t-> Amiral TIE-      <->     ");
+                                touche = getch();
+                                system("cls");
+                                if(touche=='a')
+                                {
+                                    skin[0]='<';
+                                    skin[1]='-';
+                                    skin[2]='>';
+                                }
+
+
+                            }
+
+
+
+
+
+                        }
+                        while(touche!='a');
+                        printf("\n\n\n\t\t\t\tVous pouvez combattre votre annemis avec: ");
+                        for(i=0; i<3; i++)
+                        {
+                            printf("%c",skin[i]);
+                        }
+                        Sleep(600);//fin choix du skin
+
+                    }
+                }
+
+                if(touche=='s')
+                {
+                    printf("\n\t\t\t\tMenu Jouer\n"
+                           "\n\t\t\t\tJOUER"
+                           "\n\t\t\t\tPARAMETRE"
+                           "\n\t\t\t\tMODE DE JEU"
+                           "\n\t\t\t\tCHOIX DU SKIN"
+                           "\n\t\t\t\t-> QUITTER");
+                    touche = getch();
+                    system("cls");
+
+
+                }
+            }
+            while(touche!='a'); //Fin sous menu
+
+
+
+        }
+
+        if(touche=='s') //debut historique des scores
+        {
+            printf("\n\t\t\t\tZ et S pour surfer dans le menu et A pour valider\n\n");
+            printf("\n\t\t\t\tMenu Principale\n");
+            printf("\n\t\t\t\tJOUER"
+                   "\n\t\t\t\t-> HISTORIQUE DES SCORES"
+                   "\n\t\t\t\tQUITTER\n");
+            touche = getch();
+            system("cls");
+
+            if(touche=='a')
+            {
+                printf("\nhistorique des scores\n");
+                for(i=0; i<6; i++)
+                {
+
+
+
+                    for(i=0; i<16; i++)
+                    {
+                        printf("%c",tabname1[i]);
+
+                    }
+
+                    printf(" a realiser %d de point\n ",tabscore[i]);
+
+
+
+                    for(i=0; i<16; i++)
+                    {
+                        printf("%c",tabname2[i]);
+                    }
+
+                    printf(" a realiser %d de point\n ",tabscore[i]);
+
+
+
+                    for(i=0; i<16; i++)
+                    {
+                        printf("%c",tabname3[i]);
+                    }
+
+                    printf(" a realiser %d de point\n ",tabscore[i]);
+
+
+
+                    for(i=0; i<16; i++)
+                    {
+                        printf("%c",tabname4[i]);
+                    }
+
+                    printf(" a realiser %d de point\n ",tabscore[i]);
+
+
+
+                    for(i=0; i<16; i++)
+                    {
+                        printf("%c",tabname5[i]);
+                    }
+
+                    printf(" a realiser %d de point\n ",tabscore[i]);
+                    passage=0;
+
+
+
+                }
+                printf("\nAppuyer sur entrer pour continuer... ");
+                getchar();
+
+
+
+
+
+
+
+
+            } //Fin historique
+        }
+
+
+        if(touche=='s')
+        {
+            printf("\n\t\t\t\tZ et S pour surfer dans le menu et A pour valider\n\n");
+            printf("\n\t\t\t\tMenu Principale\n");
+            printf("\n\t\t\t\tJOUER"
+                   "\n\t\t\t\tHISTORIQUE DES SCORE"
+                   "\n\t\t\t\t-> QUITTER\n");
+
+            touche = getch();
+            system("cls");
+
+            if(touche=='a')
+            {
+                do
+                {
+                    printf("\n\t\t\t\tetes-vous sûr de vouloir quitter le jeu?"
+                           "\n\t\t\t\t-> oui"
+                           "\n\t\t\t\tnon");
+                    sortie=1;
+                    touche = getch();
+                    system("cls");
+
+                    if(touche=='s')
+                    {
+                        printf("\n\t\t\t\tetes-vous sûr de vouloir quitter le jeu?"
+                               "\n\t\t\t\toui"
+                               "\n\t\t\t\t-> non");
+                        touche = getch();
+                        system("cls");
+                        sortie=0;
+                    }
+
+                }
+                while(touche!='a');
+
+
+            }
+
+        }
+        if(sortie==1)
+        {
+            touche='e';
+        }
+        else
+            touche='z';
+    }
+    while(touche!='e'); //fin menu du jeu
+
+
+
+
+
+    printf("\n\t\t\t\t\t\t\t\t          .d8888b       8888b.    '888k      y888'   8888888               ");
+    printf("\n\t\t\t\t\t\t\t\t         88k               '88b   888 8k    y8 888   888                   ");
+    printf("\n\t\t\t\t\t\t\t\t         88b    888k  .d8888888   888  88bd88  888   88888                 ");
+    printf("\n\t\t\t\t\t\t\t\t         88k    88    888   888   888    YY    888   888                   ");
+    printf("\n\t\t\t\t\t\t\t\t          '88888p'    'Y8888888   888          888   8888888               ");
+    printf("\n ");
+    printf("\n\t\t\t\t\t\t\t\t               .d8888b.     888  888  8888888  8888888b.        ");
+    printf("\n\t\t\t\t\t\t\t\t               88k   88k    888  888  888      888  'Y88b       ");
+    printf("\n\t\t\t\t\t\t\t\t               88k   88k    Y88  88Y  88888    888  .d88p       ");
+    printf("\n\t\t\t\t\t\t\t\t               88k   88k     Y8bd8Y   888      888888Y'         ");
+    printf("\n\t\t\t\t\t\t\t\t               'd8888b'       Y88Y    8888888  888   8888.      ");
+    printf("\n\t\t\t\t\t\t\t\t_________________________________________________________________________   ");
+    intro=0;
+    while(intro!=10)
+    {
+
+        system ("color 04");
+        Sleep(100);
+        system ("color 05");
+        Sleep(100);
+        system ("color 0A");
+        Sleep(100);
+
+        intro=intro+1;
+        Modejeu=0;
+
+    }
+}
+
+
+void color(int cT,int cF)
+{
+    HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(H,cF*16+cT);
+}
+
+
+
+void gotoxy(int x, int y)
+{
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    COORD pos;
+    pos.X = x;
+    pos.Y = y;
+    SetConsoleCursorPosition(hConsole, pos);
+}
